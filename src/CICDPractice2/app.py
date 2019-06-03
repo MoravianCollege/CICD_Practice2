@@ -7,7 +7,7 @@ def hello():
 
 @app.route("/foo")
 def foo():
-    return "42"
+    return "1000000"
 
 @app.route("/bar")
 def bar():
