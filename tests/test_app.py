@@ -13,8 +13,8 @@ def test_get_bar():
     app.config['TESTING'] = True
     client = app.test_client()
 
-    result = client.get('/foo?bar=42')
-    assert b'42' in result.data
+    result = client.get('/foo?bar=1000000')
+    assert b'1000000' in result.data
 
 def test_get_foobar():
     app.config['TESTING'] = True
