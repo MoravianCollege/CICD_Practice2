@@ -7,9 +7,11 @@ def hello():
 
 @app.route("/foo")
 def foo():
-    bar = request.args['bar']
-    return bar
+    return "42"
 
+@app.route("/bar")
+def bar():
+    return "Bar"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
